@@ -1,17 +1,20 @@
 package com.zengyu.sample;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-import android.widget.TextView;
+import com.zengyu.sample.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
+
+    ActivityMainBinding mBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        TextView tvCenter = findViewById(R.id.tv_center);
-        tvCenter.setText("Text Change");
+        mBinding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(mBinding.getRoot());
+        mBinding.tvCenter.setText("Text Change");
     }
 }
