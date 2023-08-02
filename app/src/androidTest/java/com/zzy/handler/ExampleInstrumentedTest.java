@@ -1,4 +1,4 @@
-package com.zengyu.sample;
+package com.zzy.handler;
 
 import android.content.Context;
 
@@ -21,7 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-
-        assertEquals("com.zengyu.sample", appContext.getPackageName());
+        assertEquals("com.zzy.handler", appContext.getPackageName());
     }
 }

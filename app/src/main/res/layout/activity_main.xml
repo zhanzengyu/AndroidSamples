@@ -7,12 +7,58 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/content_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:text="Click MSG button to test"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/normal_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="normal msg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/middleLine"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/barrier_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="barrier msg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/normal_btn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/async_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="async msg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barrier_btn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/normal_delay_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="normal msg delay 5s"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/async_btn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/remove_barrier_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="remove barrier msg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/normal_delay_btn"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middleLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
