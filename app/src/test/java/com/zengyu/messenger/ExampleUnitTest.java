@@ -1,4 +1,4 @@
-package com.zengyu.sample;
+package com.zengyu.messenger;
 
 import org.junit.Test;
 
