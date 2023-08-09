@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    这里的 model 和 manufacturer 可以通过动态获得之后来填充-->
+    <usb-accessory model="model" manufacturer="manufacturer"/>
+</resources>
