@@ -14,3 +14,6 @@
 
 ### 5. Android 开放配件 (AOA)
 [AOA 示例项目](https://github.com/zhanzengyu/AndroidSample/tree/AOA)
+
+### 6. PCM 采集和播报
+[PCM 示例项目](https://github.com/zhanzengyu/AndroidSamples/tree/PCM)
