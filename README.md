@@ -17,3 +17,6 @@
 
 ### 6. PCM 采集和播报
 [PCM 示例项目](https://github.com/zhanzengyu/AndroidSamples/tree/PCM)
+
+### 7. Hook
+[Hook startActivity 演示](https://github.com/zhanzengyu/AndroidSamples/tree/hook)
