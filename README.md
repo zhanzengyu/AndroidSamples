@@ -1,5 +1,10 @@
 # AndroidSample
 
+该分支为将 Java 版本的 master 分支重构为 Kotlin 版本后的主分支，因此修改分支名为 main。
+
+后续新分支都基于该分支拉取。
+
+
 ### 1. 获取组件方式
 [通过 **ViewBinding** 方式获取](https://github.com/zhanzengyu/AndroidSample/tree/ViewBinding)
 

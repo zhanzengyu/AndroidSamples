@@ -9,6 +9,10 @@ pluginManagement {
         maven { url 'https://maven.aliyun.com/repository/public' }
         maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
     }
+
+    plugins {
+        id 'org.jetbrains.kotlin.android' version '1.6.10' apply false // 添加 Kotlin 插件
+    }
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
